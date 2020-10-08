@@ -3,10 +3,10 @@ def calc_new_height():
     print(cw)
     ch = float(input("Enter the current height: "))
     print(ch)
-#ratio is 10:7 i think???? idk how this works
+    ratio = cw / ch
     dw = float(input("Enter the desired width: "))
     print(dw)
-    dh = float((dw / 10) * 7)
+    dh = float(dw / ratio)
     print("The corresponding height is: ",dh)
     
 calc_new_height()
