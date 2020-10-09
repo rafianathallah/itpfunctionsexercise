@@ -3,9 +3,16 @@ def convert_temp():
     print(t)
     tf = t
     print("The temperature in fahrenheit is:",tf)
-    tc = (t - 32) * (5/9)
-    print("The temperature in celcius is:",tc)
-    tk = tc + 273.15
-    print("The temperature in kelvin is:",tk)
+
+    def convert_to_celcius():
+        tc = (t - 32) * (5/9)
+        print("The temperature in celcius is:",tc)
+        
+    def convert_to_kelvin():
+        tk = (t - 32) * (5/9) + 273.15
+        print("The temperature in kelvin is:",tk)
+        
+    convert_to_celcius()
+    convert_to_kelvin()
 
 convert_temp()
